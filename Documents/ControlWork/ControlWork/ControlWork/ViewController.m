@@ -20,8 +20,8 @@
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     if(_number > 0)
     {
-        [[self jokeLabel] setText: appDelegate.array[_number]];
         _number -= 1;
+        [[self jokeLabel] setText: appDelegate.array[_number]];
     }
 }
 - (IBAction)nextButton:(id)sender
@@ -29,8 +29,8 @@
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     if(_number < appDelegate.array.count - 1)
     {
-        [[self jokeLabel] setText: appDelegate.array[_number]];
         _number += 1;
+        [[self jokeLabel] setText: appDelegate.array[_number]];
     }
 }
 
